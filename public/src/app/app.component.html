@@ -1,0 +1,11 @@
+<fieldset>
+  <legend>Restful Task API</legend>
+  <h4>All the tasks:</h4>
+  <ul>
+    <li *ngFor="let task of tasks">{{task.title}} - {{task.description}}</li>
+  </ul>
+  <h4>The third task:</h4>
+  <ul>
+    <li *ngIf="tasks.length >= 2">{{tasks[2].title}} - {{tasks[2].description}}</li>
+  </ul>
+</fieldset>
